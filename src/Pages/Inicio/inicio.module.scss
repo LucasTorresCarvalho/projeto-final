@@ -1,0 +1,111 @@
+
+.post{
+    background-image: url('../../assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 83vh;
+    display: flex;
+    align-items: center;
+    h2{
+        color: white;
+        // border: solid 2px red;
+        width: 27vw;
+        font-size: 40px;
+        margin-left: 150px;
+    }
+}
+
+.devoDoar{
+    height: 85vh;
+    div{
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 30px;
+            color: rgba(0, 86, 149, 1);
+            margin-left: 60px;
+        }
+    }
+}
+
+.boxCard{
+   
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: space-evenly;
+    article{
+        width: 20%;
+        height: 80%;
+        background-color: rgba(1, 87, 148, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        p{
+            text-align: center;
+            font-size: 1.2vw;
+        }
+    }
+}
+
+@media(max-width: 780px){
+
+    .post{
+        justify-content: center;
+        h2{
+            
+            width: 80%;
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+}
+
+@media(max-width: 1000px){
+  .boxCard{
+    article{
+    p{
+        font-size: 1.5vw;
+    }
+   }
+}
+}
+
+@media(max-width: 780px){
+    .devoDoar{
+        
+        height: 120vh;
+        div{
+            
+            justify-content: center;
+            h2{
+                margin-left: 0;
+            }
+        }
+    }
+
+    .boxCard{
+        
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+        article{
+            width: 230px;
+            height: 38vh;
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media(max-width: 479px){
+    .devoDoar{
+        height: 190vh;
+    }
+}
