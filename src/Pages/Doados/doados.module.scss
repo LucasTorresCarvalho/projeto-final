@@ -28,7 +28,7 @@
    gap: 20px; 
    justify-content: center; 
    align-items: center; 
-   cursor: not-allowed;
+   cursor: default;
 
    article {
       border: solid 2px #005695;
@@ -42,7 +42,12 @@
       padding: 10px;
       background-color: white;
       text-align: center;
+      transition: 0.3s ease-in-out;
    }
+
+   article:hover{
+    color: #005695;
+    }
 
    img {
       max-width: 100%;
@@ -50,6 +55,7 @@
       object-fit: contain;
    }
 }
+
 
 @media (max-width: 1000px) {
    .boxBooks {
