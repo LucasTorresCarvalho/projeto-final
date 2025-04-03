@@ -24,7 +24,7 @@ export default function Doados() {
 
     return (
         <section className={S.boxDoados}>
-            <h2>Livros Doados</h2><br></br>
+            <h2>Livros Doados</h2><br></br><br></br>
             <section className={S.boxBooks}>
                 {/* Livro fixo */}
                 <article>
